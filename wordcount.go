@@ -32,7 +32,7 @@ func readInput() (string, error){
 
 func getWordsCount(str string) (int, error) {
 	if str == "" {
-		return 0, errors.New("empty string")
+		return 0, nil
 	}
 	split := strings.Split(str, " ")
 	return len(split), nil
